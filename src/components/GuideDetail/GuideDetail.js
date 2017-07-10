@@ -8,9 +8,9 @@ class GuideDetail extends Component {
   render() {
     const { prodImg, guideItem } = this.props;
     return (
-      <div className="guide-detail-container">
-        <ProductImage className="" prodImg={prodImg} />
-        <GuideDescription className="" guideItem={guideItem} />
+      <div className="guide-detail-container"> 
+        <ProductImage prodImg={prodImg} />
+        <GuideDescription guideItem={guideItem} />
       </div>
     );
   }

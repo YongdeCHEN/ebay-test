@@ -1,22 +1,20 @@
+$bgColor: #92c100;
+
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  /*animation: App-logo-spin infinite 20s linear;*/
+  height: 140px;
+  margin-top: -10px;
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-intro {
-  font-size: large;
-
+  background-color: $bgColor;
+  height: 80px;
+  padding-left: 20px;
+  margin: 0px;
 }
 
 

@@ -14,6 +14,7 @@ class BuyingGuide extends Component {
       
       // get the data from JSON file
       let title = "";
+      let prodImgName = "ipad-mini.jpg";
       let guideArray = [];
       if (guideData) {
           if (guideData.title) {
@@ -22,18 +23,24 @@ class BuyingGuide extends Component {
           
           if (guideData.content) {
               guideArray = guideData.content;
+
+              if (guideArray.length > 0 && guideArray[0].thumbnail) {
+                prodImgName = guideArray[0].thumbnail;
+              }
           }
       }
 
+      // stored the content in state
       this.state = { 
           title,
           guideArray,
           currentIndex: 0,
-          prodImg: "../../assets/ipad-mini.jpg"
+          prodImg: prodImgName,
+          contentShow: true
       };
   }
 
-  //componentDidMount() {}
+  // get the left and right title in Footer Toolbar
   getLeftRightTitle(index, contentArr) {
     let leftTitle="Prev", rightTitle="Next";
 
@@ -55,18 +62,52 @@ class BuyingGuide extends Component {
     return { leftTitle, rightTitle };
   }
 
+  // collapsible or expandable the content box by setting the variable 'contentShow'
+  toggleCollExpand = () => {
+    this.setState({
+      contentShow: !(this.state.contentShow)
+    });
+  }
+
+  // goto previous page when "Prev" button is clicked
+  onClickPrev = () => {
+    if (this.state.currentIndex > 0) {
+      this.setState({
+        currentIndex: (this.state.currentIndex - 1)
+      });
+    }
+  }
+
+  // goto next page when "Next" button is clicked
+  onClickNext = () => {
+    if (this.state.currentIndex < (this.state.guideArray.length - 1)) {
+      this.setState({
+        currentIndex: (this.state.currentIndex + 1)
+      });
+    }
+  }
+
   render() {
     let guideItem = this.state.guideArray[this.state.currentIndex];
+    // check whether guideItem is null. Set a default value to it when it is null.
+    if (!guideItem) {
+      guideItem = {description: ""};
+    }
 
+    // get the left and right title in Footer Toolbar
     let {leftTitle, rightTitle} = this.getLeftRightTitle(this.state.currentIndex, this.state.guideArray);
 
     return (
-      <div className="">
-        <div className="">
-          <Header title={this.state.title} />
-          <GuideDetail prodImg={this.state.prodImg} guideItem={guideItem} />
-          <FooterToolbar leftTitle={leftTitle} rightTitle={rightTitle} />
-        </div>
+      <div className="buying-guide-container" >
+          <Header title={this.state.title} contentShow={this.state.contentShow} onClick={this.toggleCollExpand} />
+          <div className="buying-guide-content" style={{display: (this.state.contentShow?"":"none")}} >
+            <GuideDetail prodImg={this.state.prodImg} guideItem={guideItem} />
+            <FooterToolbar 
+                leftTitle={leftTitle} 
+                rightTitle={rightTitle}
+                onClickPrev={this.onClickPrev} 
+                onClickNext={this.onClickNext} />
+          </div>
       </div>
     );
   }

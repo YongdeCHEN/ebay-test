@@ -1,11 +1,11 @@
 .header-container {
-  margin: 5px;
   padding: 5px;
-  height: 40px;
+  height: 45px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
   border: 1px solid #DEDDCB;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bf342d+0,fc9e16+100 */
   background: #EBE9D0;
@@ -23,11 +23,15 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin-left: 10px; }
+    margin-left: 20px;
+    font-weight: bold; }
     .header-container .header-information .header-title {
       margin-left: 10px; }
   .header-container .header-coll-expand {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    align-items: center; }
+    align-items: center;
+    padding-right: 20px;
+    width: 20px;
+    cursor: pointer; }

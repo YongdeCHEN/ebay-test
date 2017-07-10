@@ -9,6 +9,15 @@ import FooterToolbar from '../FooterToolbar/FooterToolbar';
 
 const wrapper = shallow(<BuyingGuide />);
 
-it('should contain BuyingGuide', () => {
-    expect(wrapper.contains("BuyingGuide")).toEqual(true);
+it('BuyingGuide should contain Header', () => { 
+    expect(wrapper.find('Header').text()).toEqual('<Header />');
 });
+
+it('BuyingGuide should contain GuideDetail', () => { 
+    expect(wrapper.find('GuideDetail').text()).toEqual('<GuideDetail />');
+});
+
+it('BuyingGuide should contain FooterToolbar', () => { 
+    expect(wrapper.find('FooterToolbar').text()).toEqual('<FooterToolbar />');
+});
+

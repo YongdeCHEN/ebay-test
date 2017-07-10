@@ -1,15 +1,19 @@
 import React, { Component } from 'react';
 import './ProductImage.css';
-import logo from '../../assets/ipad-mini.jpg';
 
 class ProductImage extends Component {
-
   render() {
     const { prodImg } = this.props;
-    //var logo = require(this.props.prodImg);
+    let logo = require('../../assets/ipad-mini.jpg');
+    try {
+        logo = require('../../assets/' + prodImg);
+    }
+    catch(e) {
+      console.log("Product Image not found. Please check.");
+    }
 
     return (
-      <div className="product-image-container"> 
+      <div className="product-image-container">
         <img src={logo} alt="product img" className="product-image" />
       </div>
     );

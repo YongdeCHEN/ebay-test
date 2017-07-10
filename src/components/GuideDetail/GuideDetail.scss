@@ -1,10 +1,25 @@
 $borderColor: #f1f1f1;
- 
-.guide-detail-container {
-     padding: 10px 30px;
-     border-bottom: 1px solid $borderColor;
-     display: flex;
-     flex-direction: row;
-     justify-content: flex-start;
-     align-items: center;
+$bgColor: #ffffff;
+
+@media (min-width:770px) {
+    .guide-detail-container {
+        padding: 20px 30px;
+        border-bottom: 1px solid $borderColor;
+        background-color: $bgColor;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
+@media (max-width:768px) {
+    .guide-detail-container {
+        padding: 10px 30px;
+        border-bottom: 1px solid $borderColor;
+        background-color: $bgColor;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
 }

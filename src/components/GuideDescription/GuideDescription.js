@@ -8,7 +8,6 @@ class GuideDescription extends Component {
     return (
       <div className="description-container">
         <p className="description-text" dangerouslySetInnerHTML={{__html: guideItem.description}} />
-
       </div>
     );
   }

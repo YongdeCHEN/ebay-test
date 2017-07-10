@@ -1,46 +1,50 @@
  
 $textColor: #5d9919;
+$bgColor: #ffffff;
 
 .footer-container {
-    margin-top: 15px;
-     height: 40px;
-     display: flex;
-     flex-direction: row;
-     justify-content: space-between;
+    padding-top: 15px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: $bgColor;
 
-     .left-link {
-         display: flex;
-         flex-direction: row;
-         justify-content: flex-start;
-         padding-left: 25px;
+    .left-link {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding-left: 25px;
+        cursor: pointer;
 
-         .left-image {
-             width: 18px;
-             height:20px;
-         }
+        .left-image {
+            width: 18px;
+            height:20px;
+        }
 
-         .left-title {
-             color: $textColor;
-             text-decoration: underline;
-             margin-left: 20px;
-         }
-     }
+        .left-title {
+            color: $textColor;
+            text-decoration: underline;
+            margin-left: 20px;
+        }
+    }
 
-     .right-link {
-         display: flex;
-         flex-direction: row;
-         justify-content: flex-end;
-         padding-right: 25px;
+    .right-link {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding-right: 25px;
+        cursor: pointer;
 
-         .right-image {
-             width: 18px;
-             height: 20px;
-         }
+        .right-image {
+            width: 18px;
+            height: 20px;
+        }
 
-         .right-title {
-             color: $textColor;
-             text-decoration: underline;
-             margin-right: 20px;
-         }
-     }
- }
+        .right-title {
+            color: $textColor;
+            text-decoration: underline;
+            margin-right: 20px;
+        }
+    }
+}

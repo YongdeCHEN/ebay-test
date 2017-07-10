@@ -1,14 +1,16 @@
 .footer-container {
-  margin-top: 15px;
+  padding-top: 15px;
   height: 40px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between; }
+  justify-content: space-between;
+  background-color: #ffffff; }
   .footer-container .left-link {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    padding-left: 25px; }
+    padding-left: 25px;
+    cursor: pointer; }
     .footer-container .left-link .left-image {
       width: 18px;
       height: 20px; }
@@ -20,7 +22,8 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    padding-right: 25px; }
+    padding-right: 25px;
+    cursor: pointer; }
     .footer-container .right-link .right-image {
       width: 18px;
       height: 20px; }
