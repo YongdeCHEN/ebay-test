@@ -96,7 +96,7 @@ class BuyingGuide extends Component {
 
     // get the left and right title in Footer Toolbar
     let {leftTitle, rightTitle} = this.getLeftRightTitle(this.state.currentIndex, this.state.guideArray);
-
+ 
     return (
       <div className="buying-guide-container" >
           <Header title={this.state.title} contentShow={this.state.contentShow} onClick={this.toggleCollExpand} />
