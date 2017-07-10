@@ -1,0 +1,11 @@
+$textColor: #000000;
+
+.description-container {
+    padding: 0px 10px;
+    
+
+    .description-text {
+        color: $textColor;
+        font-size: 12px;
+    }
+}

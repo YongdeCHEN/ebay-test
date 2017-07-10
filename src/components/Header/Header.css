@@ -1,0 +1,33 @@
+.header-container {
+  margin: 5px;
+  padding: 5px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top-right-radius: 5px;
+  border: 1px solid #DEDDCB;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bf342d+0,fc9e16+100 */
+  background: #EBE9D0;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #EBE9D0 0%, #C5C7AA 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #EBE9D0 0%, #C5C7AA 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #EBE9D0 0%, #C5C7AA 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$startColor, endColorstr=$endColor,GradientType=1 );
+  /* IE6-9 */ }
+  .header-container .header-information {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 10px; }
+    .header-container .header-information .header-title {
+      margin-left: 10px; }
+  .header-container .header-coll-expand {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center; }

@@ -1,0 +1,10 @@
+$borderColor: #f1f1f1;
+ 
+.guide-detail-container {
+     padding: 10px 30px;
+     border-bottom: 1px solid $borderColor;
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-start;
+     align-items: center;
+}

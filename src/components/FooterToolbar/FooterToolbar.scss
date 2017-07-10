@@ -1,0 +1,46 @@
+ 
+$textColor: #5d9919;
+
+.footer-container {
+    margin-top: 15px;
+     height: 40px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+
+     .left-link {
+         display: flex;
+         flex-direction: row;
+         justify-content: flex-start;
+         padding-left: 25px;
+
+         .left-image {
+             width: 18px;
+             height:20px;
+         }
+
+         .left-title {
+             color: $textColor;
+             text-decoration: underline;
+             margin-left: 20px;
+         }
+     }
+
+     .right-link {
+         display: flex;
+         flex-direction: row;
+         justify-content: flex-end;
+         padding-right: 25px;
+
+         .right-image {
+             width: 18px;
+             height: 20px;
+         }
+
+         .right-title {
+             color: $textColor;
+             text-decoration: underline;
+             margin-right: 20px;
+         }
+     }
+ }
