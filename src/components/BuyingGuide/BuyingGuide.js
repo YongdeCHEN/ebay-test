@@ -1,10 +1,19 @@
-import React, { Component } from 'react';
+/**
+ * Component name: BuyingGuide
+ * Input parameters:
+ *      content.json: the json data which will be showed on the page.
+ * Functions: The entrance of whole application. 
+ *        In this component, it will read the data from json file and pass them as props in sub components.
+ *        It also defined the functions which will calculate the content of Header, Content Box and Footer Toolbar.
+ * Changed History:
+ *    Peter Chen       11 Jul 2017     initial version 
+ */
 
+import React, { Component } from 'react';
 import Header from '../Header/Header';
 import GuideDetail from '../GuideDetail/GuideDetail';
 import FooterToolbar from '../FooterToolbar/FooterToolbar';
 import guideData from '../../data/content.json';
-
 import './BuyingGuide.css';
 
 class BuyingGuide extends Component {

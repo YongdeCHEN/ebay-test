@@ -1,3 +1,12 @@
+/**
+ * Component name: ProductImage
+ * Input props:
+ *      prodImg: The url of product image which will be shown on the left side of content box.
+ * Functions: Display the product image of a Buying Guide item.
+ * Changed History:
+ *    Peter Chen       11 Jul 2017     initial version 
+ */
+
 import React, { Component } from 'react';
 import './ProductImage.css';
 

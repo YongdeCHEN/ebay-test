@@ -1,3 +1,11 @@
+/**
+ * Component name: App
+ * Input props:
+ * Functions: The App entrance. It will include the main component "BuyingGuide".
+ * Changed History:
+ *    Peter Chen       11 Jul 2017     initial version 
+ */
+
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import BuyingGuide from './components/BuyingGuide/BuyingGuide';
