@@ -1,3 +1,17 @@
+/**
+ * Component name: Header
+ * Input props:
+ *      title: The title of the Header bar showed on left side.
+ *      contentShow: the current show flag of the content box below. 
+ *                   It is used to changed the img on the right hand size.
+ *      onClick: The function when the "collapsible/expandable" link was clicked
+ * Functions: Display Header bar of the page. 
+ *   There is a image at the right hand size. 
+ *   The user can click it to collapsible/expandable the content box below.
+ * Changed History:
+ *    Peter Chen       11 Jul 2017     initial version 
+ */
+
 import React, { Component } from 'react';
 import './Header.css';
 import fileImg from '../../assets/file.png';
