@@ -14,10 +14,17 @@
     .footer-container .left-link .left-image {
       width: 18px;
       height: 20px; }
-    .footer-container .left-link .left-title {
-      color: #5d9919;
-      text-decoration: underline;
-      margin-left: 20px; }
+    @media (min-width: 770px) {
+      .footer-container .left-link .left-title {
+        color: #5d9919;
+        text-decoration: underline;
+        margin-left: 20px; } }
+    @media (max-width: 768px) {
+      .footer-container .left-link .left-title {
+        color: #5d9919;
+        text-decoration: underline;
+        margin-left: 20px;
+        font-size: 10px; } }
   .footer-container .right-link {
     display: flex;
     flex-direction: row;
@@ -27,7 +34,14 @@
     .footer-container .right-link .right-image {
       width: 18px;
       height: 20px; }
-    .footer-container .right-link .right-title {
-      color: #5d9919;
-      text-decoration: underline;
-      margin-right: 20px; }
+    @media (min-width: 770px) {
+      .footer-container .right-link .right-title {
+        color: #5d9919;
+        text-decoration: underline;
+        margin-right: 20px; } }
+    @media (max-width: 768px) {
+      .footer-container .right-link .right-title {
+        color: #5d9919;
+        text-decoration: underline;
+        margin-right: 20px;
+        font-size: 10px; } }

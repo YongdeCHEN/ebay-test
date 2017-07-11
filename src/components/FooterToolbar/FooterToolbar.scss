@@ -22,11 +22,22 @@ $bgColor: #ffffff;
             height:20px;
         }
 
-        .left-title {
-            color: $textColor;
-            text-decoration: underline;
-            margin-left: 20px;
+        @media (min-width:770px) {
+                .left-title {
+                    color: $textColor;
+                    text-decoration: underline;
+                    margin-left: 20px;
+                }
         }
+        @media (max-width:768px) {
+                .left-title {
+                    color: $textColor;
+                    text-decoration: underline;
+                    margin-left: 20px;
+                    font-size: 10px;
+                }
+        }
+
     }
 
     .right-link {
@@ -41,10 +52,22 @@ $bgColor: #ffffff;
             height: 20px;
         }
 
-        .right-title {
-            color: $textColor;
-            text-decoration: underline;
-            margin-right: 20px;
+
+        @media (min-width:770px) {
+            .right-title {
+                color: $textColor;
+                text-decoration: underline;
+                margin-right: 20px;
+            }
         }
+        @media (max-width:768px) {
+            .right-title {
+                color: $textColor;
+                text-decoration: underline;
+                margin-right: 20px;
+                font-size: 10px;
+            }
+        }
+                
     }
 }
